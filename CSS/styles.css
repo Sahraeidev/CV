@@ -1,12 +1,23 @@
 body{
+    font-family: 'Merriweather',sans-serif;
     background-color: #DFF6FF;
     text-align: center;
     color: #1363DF;
     margin: 0;
     margin-bottom: 50px;
 }
+h1{
+    font-family: 'Sacramento',serif;
+}
+h3{
+    font-family: 'Montserrat',sans-serif;
+}
+p{
+    font-family: 'Montserrat',sans-serif;
+}
 li{
     margin: 20px;
+    font-family: 'Montserrat',sans-serif;
 }
 table{
     width: 100%;
@@ -23,13 +34,14 @@ input{
 }
 td{
     width: 50%;
+    font-family: 'Montserrat',sans-serif;
 }
 
 
 /*CLASS SELECTORS*/
 .btn{
     text-decoration: none;
-    color: #06283D;
+    color: #1363DF;
     border-width: 2px;
     border-style: solid;
     border-color: #47B5FF;
@@ -42,12 +54,12 @@ td{
 }
 
 .navbar-btn{
-    margin: 0 50px;
+    margin: 0 5%;
     font-size: large;
     text-decoration: none;
     color: #47B5FF;
     position: relative;
-    top: 25px;
+    top: 25%;
     padding: 8px;
 
 }
