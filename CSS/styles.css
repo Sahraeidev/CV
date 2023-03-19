@@ -1,0 +1,85 @@
+body{
+    background-color: #DFF6FF;
+    text-align: center;
+    color: #1363DF;
+    margin: 0;
+    margin-bottom: 50px;
+}
+li{
+    margin: 20px;
+}
+table{
+    width: 100%;
+}
+hr{
+    border-style: dotted none none;
+    border-color: #06283D;
+    border-width: 5px;
+    border-radius: 100%;
+}
+input{
+    display: block;
+    margin: 0 auto;
+}
+td{
+    width: 50%;
+}
+
+
+/*CLASS SELECTORS*/
+.btn{
+    text-decoration: none;
+    color: #06283D;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #47B5FF;
+    border-radius: 30px;
+    padding: 0 2%;
+}
+.btn:hover{
+    color: #47B5FF;
+    background-color: #06283D;
+}
+
+.navbar-btn{
+    margin: 0 50px;
+    font-size: large;
+    text-decoration: none;
+    color: #47B5FF;
+    position: relative;
+    top: 25px;
+    padding: 8px;
+
+}
+.navbar-btn:hover{
+    padding: 5px;
+    border: solid;
+    border-radius: 3px;
+}
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: #06283D;
+}
+
+.middle-container{
+    color: #1363DF;
+    background-color: #06283D;
+    border-radius: 10px;
+    margin: 0 50px;
+    padding: 50px 0;
+}
+/*ID SELECTORS*/
+#MyPicture{
+    margin-top: 150px;
+    height: 200px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #06283D;
+}
+#contactForm{
+    padding-top: 75px;
+}
