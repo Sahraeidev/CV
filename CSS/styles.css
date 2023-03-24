@@ -4,7 +4,8 @@ body{
     text-align: center;
     color: #1363DF;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 3%;
+    line-height: 2.5;
 }
 h1{
     font-family: 'Sacramento',serif;
@@ -16,7 +17,7 @@ p{
     font-family: 'Montserrat',sans-serif;
 }
 li{
-    margin: 20px;
+    margin: 2%;
     font-family: 'Montserrat',sans-serif;
 }
 table{
@@ -64,8 +65,8 @@ td{
 
 }
 .navbar-btn:hover{
-    padding: 5px;
-    border: solid;
+    border-style: none none solid none;
+    padding-bottom: 1.2%;
     border-radius: 3px;
 }
 
@@ -91,6 +92,10 @@ td{
     border-radius: 100%;
     border-style: solid;
     border-color: #06283D;
+}
+#MyPicture:hover{
+    transform :scale(1.5);
+    rotate: 360deg;
 }
 #contactForm{
     padding-top: 75px;
