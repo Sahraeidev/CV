@@ -1,9 +1,12 @@
 body {
-    background-color: #222831;
+    background-color: #393E46;
     margin: auto;
+    padding: 2%;
+    font-family: "Mooli", sans-serif;
 }
 
 main {
+    padding-top: 3rem;
     background-color: #EEEEEE;
     color: #393E46;
     border-radius: 10px;
@@ -11,14 +14,17 @@ main {
 
 /*Navbar*/
 nav {
-    background-color: #393E46;
+    background-color: #222831;
     height: 5rem;
-    width: 100%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 3% auto;
     border-radius: 60px;
-
+    border: #393E46 solid 5px;
     display: flex;
     position: fixed;
+    top: -0.5rem;
+    left: 0;
+    right: 0;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -29,6 +35,14 @@ nav {
     color: #EEEEEE;
     text-decoration: none;
     text-align: center;
+    transition: 1s;
+}
+
+.nav-item:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 /*Pictures */
@@ -37,6 +51,7 @@ nav {
     height: 10rem;
     border: #222831 solid 5px;
     margin-right: 10rem;
+    transition: 1s;
 }
 
 #ProfilePic:hover {
@@ -44,14 +59,16 @@ nav {
 }
 
 #OneOfMyProjects {
-    padding-top: 6rem;
-    width: 100%;
-    height: 25rem;
+    border: 2px solid #393E46;
+    border-radius: 10px;
+    display: block;
+    margin: 6rem auto;
+    width: 85%;
 }
 
 /*Aboutme*/
 .MyProfile {
-    padding: 5%;
+    padding: 2% 0.5%;
     display: flex;
     flex-wrap: wrap;
 
@@ -60,6 +77,31 @@ nav {
 
 /*More*/
 .More {
+    background-color: #222831;
+    color: #EEEEEE;
     display: flex;
     padding: 2%;
+}
+
+ul {
+    font-size: 1.5rem;
+}
+
+ul a {
+    text-decoration: none;
+    color: #222831;
+}
+
+.socialmediaicon {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100%;
+}
+
+aside {
+    margin-left: 1rem;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: #EEEEEE;
+    color: #222831;
 }
