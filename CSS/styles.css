@@ -1,0 +1,65 @@
+body {
+    background-color: #222831;
+    margin: auto;
+}
+
+main {
+    background-color: #EEEEEE;
+    color: #393E46;
+    border-radius: 10px;
+}
+
+/*Navbar*/
+nav {
+    background-color: #393E46;
+    height: 5rem;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 60px;
+
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-item {
+    color: #EEEEEE;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Pictures */
+#ProfilePic {
+    width: 10rem;
+    height: 10rem;
+    border: #222831 solid 5px;
+    margin-right: 10rem;
+}
+
+#ProfilePic:hover {
+    border-radius: 100%;
+}
+
+#OneOfMyProjects {
+    padding-top: 6rem;
+    width: 100%;
+    height: 25rem;
+}
+
+/*Aboutme*/
+.MyProfile {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+/*More*/
+.More {
+    display: flex;
+    padding: 2%;
+}
