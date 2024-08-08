@@ -68,12 +68,16 @@ nav {
 
 /*Aboutme*/
 .MyProfile {
-    padding: 2% 0.5%;
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
+.aboutme {
+    width: 25%;
+}
 
 /*More*/
 .More {
