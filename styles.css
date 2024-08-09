@@ -1,25 +1,24 @@
 body {
-    background-color: #393E46;
+    background-color: #EEEEEE;
     margin: auto;
     padding: 2%;
     font-family: "Mooli", sans-serif;
 }
 
 main {
-    padding-top: 3rem;
-    background-color: #EEEEEE;
-    color: #393E46;
+    padding-top: 1.5rem;
+    background-color: #222831;
+    color: #EEEEEE;
     border-radius: 10px;
 }
 
 /*Navbar*/
 nav {
-    background-color: #222831;
-    height: 5rem;
+    background-color: #393E46;
+    height: 3rem;
     width: 95%;
     margin: 3% auto;
     border-radius: 60px;
-    border: #393E46 solid 5px;
     display: flex;
     position: fixed;
     top: -0.5rem;
@@ -50,7 +49,7 @@ nav {
     width: 10rem;
     height: 10rem;
     border: #222831 solid 5px;
-    margin-right: 10rem;
+    margin-right: 4rem;
     transition: 1s;
 }
 
@@ -58,12 +57,21 @@ nav {
     border-radius: 100%;
 }
 
-#OneOfMyProjects {
+.ProjectPics {
+
     border: 2px solid #393E46;
     border-radius: 10px;
     display: block;
-    margin: 6rem auto;
-    width: 85%;
+    width: 40%;
+    height: 25rem;
+}
+
+.OneOfMyProjects {
+    background-color: #222831;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5rem;
 }
 
 /*Aboutme*/
@@ -88,7 +96,7 @@ nav {
 }
 
 ul {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 ul a {
@@ -103,9 +111,17 @@ ul a {
 }
 
 aside {
-    margin-left: 1rem;
     border-radius: 10px;
     padding: 2%;
     background-color: #EEEEEE;
     color: #222831;
+}
+
+table {
+    background-color: #EEEEEE;
+    color: #222831;
+    border-radius: 10px;
+    margin: 1%;
+    margin-left: 1rem;
+    padding: 2rem;
 }
