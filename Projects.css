@@ -6,6 +6,13 @@ body {
     font-style: normal;
     background-color: #222831;
     text-align: center;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.5rem;
+    }
 }
 
 nav {
