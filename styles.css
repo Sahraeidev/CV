@@ -4,6 +4,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background-color: #222831;
 }
 
 nav {
@@ -27,12 +28,8 @@ nav {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #222831;
     min-height: fit-content;
     min-width: fit-content;
-    width: 40rem;
-    height: 30rem;
-    border-radius: 5px;
 }
 
 #PFP {
@@ -124,4 +121,51 @@ h2 {
     background-size: cover;
     background-image: url(Media/NewElevator.png);
     min-height: fit-content;
+}
+
+.resume table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+}
+
+.contact-me {
+    height: 100vh;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Media/Istak.png);
+    min-height: fit-content;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    transition: 0.5s;
+    border: #FFD369 2px solid;
+}
+
+.social:hover {
+    transform: scale(105%);
+}
+
+#BackToHome {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: #FFD369 solid 2px;
+    color: #FFD369;
+    text-decoration: none;
+    transition: 0.5s;
+    align-self: center;
 }
