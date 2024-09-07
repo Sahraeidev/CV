@@ -53,6 +53,7 @@ nav {
     background-size: cover;
     min-height: fit-content;
     background-color: #393E46;
+    padding: 1rem 0;
 }
 
 #blenderrenders {
