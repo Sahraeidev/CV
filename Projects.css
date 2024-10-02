@@ -43,6 +43,10 @@ nav {
     margin-top: 2rem;
 }
 
+#BackToHome:hover {
+    transform: translateY(-0.5em);
+}
+
 .project-item {
     margin: 1rem;
     height: 33vh;

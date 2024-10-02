@@ -7,9 +7,25 @@ body {
     background-color: #222831;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 995px) {
     body {
         font-size: 1rem;
+    }
+
+    .Intro {
+        background-size: 100%;
+    }
+
+    .Projects-section {
+        background-size: 100%;
+    }
+
+    .contact-me {
+        background-size: 100%;
+    }
+
+    .resume {
+        background-size: 100%;
     }
 }
 
@@ -23,7 +39,6 @@ nav {
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
     background-image: url(Media/Brown-Tank-Render.png);
     align-content: center;
     align-items: center;
@@ -124,7 +139,6 @@ h2 {
     text-align: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
     background-image: url(Media/NewElevator.png);
     min-height: fit-content;
 }
@@ -142,7 +156,6 @@ h2 {
     text-align: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
     background-image: url(Media/Istak.png);
     min-height: fit-content;
 }
