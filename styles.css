@@ -17,15 +17,15 @@ body {
     }
 
     .Projects-section {
-        background-size: 100%;
+        background-size: cover;
     }
 
     .contact-me {
-        background-size: 100%;
+        background-size: cover;
     }
 
     .resume {
-        background-size: 100%;
+        background-size: cover;
     }
 }
 
