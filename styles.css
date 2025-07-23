@@ -2,162 +2,114 @@ body {
     margin: 0;
     color: #EEEEEE;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background-color: #222831;
+    background-color: #393E46;
 }
 
-@media (min-width: 995px) {
-    body {
-        font-size: 1rem;
-    }
-
-    .Intro {
-        background-size: 100%;
-    }
-
-    .Projects-section {
-        background-size: cover;
-    }
-
-    .contact-me {
-        background-size: cover;
-    }
-
-    .resume {
-        background-size: cover;
-    }
-}
-
-nav {
+.name {
     position: fixed;
-    color: #FFD369;
-    margin-left: 2rem;
+    top: 1vh;
+    left: 5vw;
+    color: white;
+    z-index: 100;
 }
 
-.Intro {
+.landing-doc {
     height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url(Media/Brown-Tank-Render.png);
-    align-content: center;
-    align-items: center;
-    min-height: fit-content;
-}
-
-.Intro div {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: fit-content;
-    min-width: fit-content;
-}
-
-#PFP {
-    height: 13rem;
-    width: 13rem;
-    margin-top: 0.5rem;
-    border-radius: 5px;
-
-}
-
-
-
-.Projects-section {
-    height: 100vh;
-    text-align: center;
-    background-attachment: fixed;
+    background-image: url("Media/landing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(Media/Prj.png);
-    min-height: fit-content;
-
-
+    background-position: center;
 }
 
-.Projects {
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    color: #FFD369;
-    transition: 0.5s;
-}
-
-.projects-list {
-    padding: 5rem;
+.profile-intro {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.Projects div {
-
-    background-color: #222831;
-    width: 15rem;
-    height: 20rem;
-    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw;
     text-align: center;
-    transition: 0.5s;
-    min-height: fit-content;
-    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 2vh;
 }
-
-.Projects:hover {
-    transform: scale(105%);
-}
-
-.Projects img {
-    height: 15rem;
-    width: 15rem;
-    border-radius: 10px;
-    border-bottom: 2px solid #FFD369;
-}
-
-h2 {
-    padding-top: 5rem;
-    margin-top: 0;
+.profile-intro div {
+    border-radius: 20px;
+    padding: 5vh;
+    background-color: #222831;
     color: #EEEEEE;
 }
-
-#OtherProjectsbtn {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    border-radius: 5px;
-    border: #FFD369 solid 2px;
-    color: #FFD369;
-    text-decoration: none;
-    transition: 0.5s;
+.profile-intro div img {
+    width: 25vh;
+    max-width: 40vw;
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
-#OtherProjectsbtn:hover {
-    transform: translateY(-0.5em);
+.projects {
+    min-height: 90vh;
+    background-image: url("Media/Brown-Tank-Render.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10vh 5vw 5vh 5vw;
+}
+
+.projects-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 5vh;
+}
+
+.projects-lists div {
+    width: 80vw;
+    max-width: 300px;
+    border: #00ADB5 2px solid;
+    border-radius: 20px;
+    padding: 2vh 1vw;
+    background-color: rgba(34, 40, 49, 0.61);
+}
+.projects-lists div img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .resume {
-    height: 100vh;
-    text-align: center;
-    background-attachment: fixed;
+    background-image: url("Media/NewElevator.png");
     background-repeat: no-repeat;
-    background-image: url(Media/NewElevator.png);
-    min-height: fit-content;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10vh 5vw;
+    background-attachment: fixed;
 }
-
 .resume table {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 1em;
+    overflow-x: auto;
+    display: block;
+}
+.resume td {
+    padding: 1em;
+    color: #EEEEEE;
+    text-align: left;
 }
 
+/* Contact Section */
 .contact-me {
-    height: 100vh;
-    text-align: center;
-    background-attachment: fixed;
+    background-image: url("Media/Istak.png");
     background-repeat: no-repeat;
-    background-image: url(Media/Istak.png);
-    min-height: fit-content;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10vh 5vw;
 }
 
 .social-media {
@@ -167,25 +119,105 @@ h2 {
 }
 
 .social {
-    display: inline-block;
     height: 100px;
     width: 100px;
-    border-radius: 100%;
+    border-radius: 50%;
     transition: 0.5s;
     border: #FFD369 2px solid;
 }
-
 .social:hover {
     transform: scale(105%);
 }
 
-#BackToHome {
-    display: inline-block;
-    padding: 1rem 1.5rem;
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 2vh auto;
+    text-align: left;
+    background-color: rgba(34, 40, 49, 0.6);
+    border-radius: 15px;
+    padding: 3vh 4vw;
+    box-sizing: border-box;
+}
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 1em;
+    margin: 0.8em 0;
+    border: none;
     border-radius: 5px;
-    border: #FFD369 solid 2px;
-    color: #FFD369;
+    font-size: 1rem;
+}
+form button {
+    background-color: #00ADB5;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #00cfd1;
+}
+
+/* General Text Styling */
+h1, h3, p {
+    margin: 1vh 0;
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 1em 2em;
+    background-color: #393E46;
+    color: white;
     text-decoration: none;
-    transition: 0.5s;
-    align-self: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+a.button:hover {
+    background-color: #00ADB5;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .name {
+        position: static;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .profile-intro {
+        flex-direction: column;
+        padding-top: 15vh;
+    }
+
+    .projects {
+        padding-top: 5vh;
+    }
+
+    .resume table {
+        font-size: 0.9rem;
+    }
+
+    .projects-lists div {
+        width: 90vw;
+    }
+
+    .profile-intro div img {
+        width: 18vh;
+    }
+
+    .social {
+        height: 70px;
+        width: 70px;
+        margin: 0.5em;
+    }
+
+    form {
+        padding: 4vw;
+    }
 }
