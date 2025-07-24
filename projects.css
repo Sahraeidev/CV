@@ -1,0 +1,140 @@
+/* Base Styles */
+body {
+    margin: 0;
+    color: #EEEEEE;
+    font-family: "Quicksand", sans-serif;
+    background-image: url("Media/NewElevator.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.name {
+    position: fixed;
+    top: 1vh;
+    left: 5vw;
+    color: white;
+    z-index: 100;
+}
+
+.skills {
+    text-align: center;
+    padding: 10vh 5vw;
+    background-color: rgba(34, 40, 49, 0.58);
+    box-sizing: border-box;
+}
+
+.project {
+    margin: 10vh auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 2vh;
+    background-color: rgba(57, 62, 70, 0.62);
+    border-radius: 15px;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project div {
+    flex: 1 1 300px;
+    min-width: 280px;
+    text-align: center;
+}
+
+.project div img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 2vh;
+    padding: 1em 2em;
+    background-color: #393E46;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: #00ADB5;
+}
+
+
+
+
+.social-lists {
+    min-height: 90vh;
+    background-image: url("Media/EFE.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10vh 5vw 5vh 5vw;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 5vh;
+}
+
+.socials div {
+    width: 80vw;
+    max-width: 300px;
+    border: #00ADB5 2px solid;
+    border-radius: 20px;
+    padding: 2vh 1vw;
+    background-color: rgba(34, 40, 49, 0.61);
+}
+.socials div img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills {
+        padding: 5vh 3vw;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 3vh 5vw;
+    }
+
+    .project div img {
+        max-width: 90%;
+        margin-bottom: 2vh;
+    }
+
+    .name {
+        font-size: 1rem;
+        top: 2vh;
+        left: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        padding: 4vh 2vw;
+    }
+
+    .project {
+        width: 95%;
+    }
+
+    a.button {
+        padding: 0.8em 1.5em;
+        font-size: 0.9rem;
+    }
+}
