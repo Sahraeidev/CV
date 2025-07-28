@@ -1,10 +1,23 @@
-body {
+/* ==== Reset & General Fixes ==== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
     margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ==== Base Styles ==== */
+body {
     color: #EEEEEE;
     font-family: "Quicksand", sans-serif;
     background-color: #393E46;
 }
 
+/* ==== Fixed Header ==== */
 .name {
     position: fixed;
     top: 1vh;
@@ -13,6 +26,7 @@ body {
     z-index: 100;
 }
 
+/* ==== Landing Section ==== */
 .landing-doc {
     height: 100vh;
     background-image: url("Media/landing.jpg");
@@ -29,22 +43,31 @@ body {
     align-items: center;
     padding: 0 5vw;
     text-align: center;
+}
+
+.intro-content {
+    display: flex;
     flex-wrap: wrap;
-    gap: 2vh;
-}
-.profile-intro div {
-    border-radius: 20px;
-    padding: 5vh;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
     background-color: #222831;
-    color: #EEEEEE;
+    padding: 3vh;
+    border-radius: 20px;
 }
-.profile-intro div img {
-    width: 25vh;
-    max-width: 40vw;
+
+.intro-content img {
+    width: clamp(120px, 25vh, 200px);
     border: 3px solid white;
     border-radius: 50%;
 }
 
+.intro-text {
+    color: #EEEEEE;
+    max-width: 500px;
+}
+
+/* ==== Projects Section ==== */
 .projects {
     min-height: 90vh;
     background-image: url("Media/Brown-Tank-Render.png");
@@ -56,27 +79,26 @@ body {
 }
 
 .projects-lists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 5vw;
     margin-top: 5vh;
 }
 
 .projects-lists div {
-    width: 80vw;
-    max-width: 300px;
     border: #00ADB5 2px solid;
     border-radius: 20px;
     padding: 2vh 1vw;
     background-color: rgba(34, 40, 49, 0.61);
 }
+
 .projects-lists div img {
     border-radius: 20px;
     width: 100%;
     height: auto;
 }
 
+/* ==== Resume Section ==== */
 .resume {
     background-image: url("Media/NewElevator.png");
     background-repeat: no-repeat;
@@ -86,23 +108,27 @@ body {
     padding: 10vh 5vw;
     background-attachment: fixed;
 }
+
+.resume-table-container {
+    overflow-x: auto;
+}
+
 .resume table {
+    min-width: 600px;
     width: 100%;
-    max-width: 100%;
     border-collapse: collapse;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 1em;
-    overflow-x: auto;
-    display: block;
 }
+
 .resume td {
     padding: 1em;
     color: #EEEEEE;
     text-align: left;
 }
 
-/* Contact Section */
+/* ==== Contact Section ==== */
 .contact-me {
     background-image: url("Media/Istak.png");
     background-repeat: no-repeat;
@@ -116,6 +142,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .social {
@@ -129,7 +156,7 @@ body {
     transform: scale(105%);
 }
 
-/* Contact Form Styling */
+/* ==== Contact Form ==== */
 form {
     max-width: 600px;
     margin: 2vh auto;
@@ -163,7 +190,7 @@ form button:hover {
     background-color: #00cfd1;
 }
 
-/* General Text Styling */
+/* ==== General Text & Buttons ==== */
 h1, h3, p {
     margin: 1vh 0;
 }
@@ -181,28 +208,14 @@ a.button {
 a.button:hover {
     background-color: #00ADB5;
 }
-/*
-a.buttonMenu {
-    display: inline-block;
-    margin-top: 5vh;
-    padding: 1em 2em;
-    color: #EEEEEE;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    background-color: rgba(57, 62, 70, 0.45);
 
-}
-a.buttonMenu:hover {
-    background-color: rgba(255, 211, 105, 0.43);
-}*/
-
-
-/* Media Queries */
+/* ==== Responsive Layouts ==== */
 @media (max-width: 768px) {
     .name {
         position: static;
         text-align: center;
         margin-top: 2vh;
+        width: 100%;
     }
 
     .profile-intro {
@@ -214,25 +227,77 @@ a.buttonMenu:hover {
         padding-top: 5vh;
     }
 
-    .resume table {
-        font-size: 0.9rem;
-    }
-
-    .projects-lists div {
-        width: 90vw;
-    }
-
-    .profile-intro div img {
-        width: 18vh;
-    }
-
     .social {
         height: 70px;
         width: 70px;
-        margin: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .intro-content img {
+        width: 150px;
     }
 
     form {
         padding: 4vw;
     }
+
+    .social {
+        height: 60px;
+        width: 60px;
+    }
+
+    .projects-lists {
+        gap: 3vw;
+    }
+}
+
+.profile-intro {
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 0 5vw;
+
+    text-align: center;
+
+    flex-wrap: wrap;
+
+    gap: 2vh;
+
+}
+
+.profile-intro div {
+
+    border-radius: 20px;
+
+    padding: 5vh;
+
+    background-color: #222831;
+
+    color: #EEEEEE;
+
+}
+
+.profile-intro div img {
+
+    width: 25vh;
+
+    max-width: 40vw;
+
+    border: 3px solid white;
+
+    border-radius: 50%;
+
 }
