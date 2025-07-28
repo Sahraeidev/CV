@@ -181,6 +181,21 @@ a.button {
 a.button:hover {
     background-color: #00ADB5;
 }
+/*
+a.buttonMenu {
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 1em 2em;
+    color: #EEEEEE;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    background-color: rgba(57, 62, 70, 0.45);
+
+}
+a.buttonMenu:hover {
+    background-color: rgba(255, 211, 105, 0.43);
+}*/
+
 
 /* Media Queries */
 @media (max-width: 768px) {
