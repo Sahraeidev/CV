@@ -1,14 +1,23 @@
-/* Base Styles */
-body {
+/* ==== Reset & General Fixes ==== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
     margin: 0;
-    color: #EEEEEE;
-    font-family: "Quicksand", sans-serif;
-    background-image: url("Media/NewElevator.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0;
+}
+
+* {
     box-sizing: border-box;
 }
 
+/* ==== Base Styles ==== */
+body {
+    color: #EEEEEE;
+    font-family: "Quicksand", sans-serif;
+    background-color: #393E46;
+}
+
+/* ==== Fixed Header ==== */
 .name {
     position: fixed;
     top: 1vh;
@@ -17,62 +26,51 @@ body {
     z-index: 100;
 }
 
-.skills {
-    text-align: center;
-    padding: 10vh 5vw;
-    background-color: rgba(34, 40, 49, 0.58);
-    box-sizing: border-box;
+/* ==== Landing Section ==== */
+.landing-doc {
+    height: 100vh;
+    background-image: url("Media/landing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.project {
-    margin: 10vh auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    padding: 2vh;
-    background-color: rgba(57, 62, 70, 0.62);
-    border-radius: 15px;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.project div {
-    flex: 1 1 300px;
-    min-width: 280px;
-    text-align: center;
-}
-
-.project div img {
+.profile-intro {
     width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: auto;
-    border-radius: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw;
+    text-align: center;
 }
 
-a.button {
-    display: inline-block;
-    margin-top: 2vh;
-    padding: 1em 2em;
-    background-color: #393E46;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+.intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    padding: 3vh;
+    border-radius: 20px;
 }
 
-a.button:hover {
-    background-color: #00ADB5;
+.intro-content img {
+    width: clamp(120px, 25vh, 200px);
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
+.intro-text {
+    color: #EEEEEE;
+    max-width: 500px;
+}
 
-
-
-.social-lists {
+/* ==== Projects Section ==== */
+.projects {
     min-height: 90vh;
-    background-image: url("Media/EFE.png");
+    background-image: url("Media/Brown-Tank-Render.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -80,61 +78,226 @@ a.button:hover {
     padding: 10vh 5vw 5vh 5vw;
 }
 
-.socials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.projects-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 5vw;
     margin-top: 5vh;
 }
 
-.socials div {
-    width: 80vw;
-    max-width: 300px;
+.projects-lists div {
     border: #00ADB5 2px solid;
     border-radius: 20px;
     padding: 2vh 1vw;
     background-color: rgba(34, 40, 49, 0.61);
 }
-.socials div img {
+
+.projects-lists div img {
     border-radius: 20px;
     width: 100%;
     height: auto;
 }
-/* Responsive Adjustments */
+
+/* ==== Resume Section ==== */
+.resume {
+    background-image: url("Media/NewElevator.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10vh 5vw;
+    background-attachment: fixed;
+}
+
+.resume-table-container {
+    overflow-x: auto;
+}
+
+.resume table {
+    min-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.resume td {
+    padding: 1em;
+    color: #EEEEEE;
+    text-align: left;
+}
+
+/* ==== Contact Section ==== */
+.contact-me {
+    background-image: url("Media/Istak.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10vh 5vw;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.social {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: #FFD369 2px solid;
+}
+.social:hover {
+    transform: scale(105%);
+}
+
+/* ==== Contact Form ==== */
+form {
+    max-width: 600px;
+    margin: 2vh auto;
+    text-align: left;
+    background-color: rgba(34, 40, 49, 0.6);
+    border-radius: 15px;
+    padding: 3vh 4vw;
+    box-sizing: border-box;
+}
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 1em;
+    margin: 0.8em 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+form button {
+    background-color: #00ADB5;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #00cfd1;
+}
+
+/* ==== General Text & Buttons ==== */
+h1, h3, p {
+    margin: 1vh 0;
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 5vh;
+    padding: 1em 2em;
+    background-color: #393E46;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+a.button:hover {
+    background-color: #00ADB5;
+}
+
+/* ==== Responsive Layouts ==== */
 @media (max-width: 768px) {
-    .skills {
-        padding: 5vh 3vw;
-    }
-
-    .project {
-        flex-direction: column;
-        padding: 3vh 5vw;
-    }
-
-    .project div img {
-        max-width: 90%;
-        margin-bottom: 2vh;
-    }
-
     .name {
-        font-size: 1rem;
-        top: 2vh;
-        left: 3vw;
+        position: static;
+        text-align: center;
+        margin-top: 2vh;
+        width: 100%;
+    }
+
+    .profile-intro {
+        flex-direction: column;
+        padding-top: 15vh;
+    }
+
+    .projects {
+        padding-top: 5vh;
+    }
+
+    .social {
+        height: 70px;
+        width: 70px;
     }
 }
 
 @media (max-width: 480px) {
-    .skills {
-        padding: 4vh 2vw;
+    .intro-content {
+        flex-direction: column;
     }
 
-    .project {
-        width: 95%;
+    .intro-content img {
+        width: 150px;
     }
 
-    a.button {
-        padding: 0.8em 1.5em;
-        font-size: 0.9rem;
+    form {
+        padding: 4vw;
     }
+
+    .social {
+        height: 60px;
+        width: 60px;
+    }
+
+    .projects-lists {
+        gap: 3vw;
+    }
+}
+
+.profile-intro {
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 0 5vw;
+
+    text-align: center;
+
+    flex-wrap: wrap;
+
+    gap: 2vh;
+
+}
+
+.profile-intro div {
+
+    border-radius: 20px;
+
+    padding: 5vh;
+
+    background-color: #222831;
+
+    color: #EEEEEE;
+
+}
+
+.profile-intro div img {
+
+    width: 25vh;
+
+    max-width: 40vw;
+
+    border: 3px solid white;
+
+    border-radius: 50%;
+
 }
