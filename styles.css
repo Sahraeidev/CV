@@ -264,8 +264,8 @@ form button:hover {
     }
 
     .social-media-icons {
-        height: clamp(7vh, 8vh, 9vh);
-        width:  clamp(7vh, 8vh, 9vh);
+        height: 8vh;
+        width:  8vh;
     }
 
     .profile-img {
