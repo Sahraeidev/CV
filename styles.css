@@ -22,7 +22,6 @@ body {
 
 .navbar {
     min-height: fit-content;
-    margin-top: 2vh; 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -30,11 +29,12 @@ body {
     position: fixed;
     opacity: 0.9;
     height: auto; 
-    gap: 0.5rem; 
+    gap: 0.5rem;
+    background-color: #26282B;
+
 }
 
 .button {
-    background-color: #26282B;
     width: clamp(60px, 8vw, 120px);
     padding: clamp(1vh, 1.5vh, 2vh) 0.75rem; 
     color: #5F85DB;
